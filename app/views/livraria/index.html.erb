@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Livraria</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titulo</th>
+      <th>Autor</th>
+      <th>Páginas</th>
+      <th>Editora</th>
+      <th>Avaliação</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @livraria.each do |livrarium| %>
+      <tr>
+        <td><%= livrarium.Titulo %></td>
+        <td><%= livrarium.Autor %></td>
+        <td><%= livrarium.Páginas %></td>
+        <td><%= livrarium.Editora %></td>
+        <td><%= livrarium.Avaliação %></td>
+        <td><%= link_to 'Show', livrarium %></td>
+        <td><%= link_to 'Edit', edit_livrarium_path(livrarium) %></td>
+        <td><%= link_to 'Destroy', livrarium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Livrarium', new_livrarium_path %>

@@ -1,0 +1,2 @@
+class Livrarium < ApplicationRecord
+end

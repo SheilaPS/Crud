@@ -1,0 +1,42 @@
+<%= form_with(model: livrarium) do |form| %>
+  <% if livrarium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(livrarium.errors.count, "error") %> prohibited this livrarium from being saved:</h2>
+
+      <ul>
+        <% livrarium.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Titulo %>
+    <%= form.text_field :Titulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Autor %>
+    <%= form.text_field :Autor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Páginas %>
+    <%= form.number_field :Páginas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Editora %>
+    <%= form.text_field :Editora %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Avaliação %>
+    <%= form.number_field :Avaliação %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
