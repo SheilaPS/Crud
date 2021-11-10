@@ -1,4 +1,5 @@
 class LivrariaController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_action :set_livrarium, only: %i[ show edit update destroy ]
 
   # GET /livraria or /livraria.json
