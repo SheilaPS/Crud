@@ -11,6 +11,7 @@ Instalar o Rails: http://www.railsinstaller.org/pt-BR
 Instalar Node JS e Yarn: 
 
 https://nodejs.org/pt-br/download/
+
 https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
 
 Para criar as operações CRUD o Rails oferece uma forma simples que é o scaffolding. Este é uma ferramenta do Rails que gera rapidamente todo o código e as páginas necessárias para uma aplicação CRUD.
