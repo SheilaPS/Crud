@@ -39,7 +39,7 @@ class LivrariaController < ApplicationController
   def update
     respond_to do |format|
       if @livrarium.update(livrarium_params)
-        format.html { redirect_to @livrarium, notice: "Livrarium was successfully updated." }
+        format.html { redirect_to @livrarium, notice: "Livro alterado com sucesso." }
         format.json { render :show, status: :ok, location: @livrarium }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LivrariaController < ApplicationController
   def destroy
     @livrarium.destroy
     respond_to do |format|
-      format.html { redirect_to livraria_url, notice: "Livrarium was successfully destroyed." }
+      format.html { redirect_to livraria_url, notice: "Livro deletado com sucesso." }
       format.json { head :no_content }
     end
   end

@@ -3,6 +3,7 @@
 
 <font color="green"><center><h1>Livraria da Sheila</h1></center></fonte>
 
+<font color="black">
 <br>
 <br>
 <center>
@@ -27,9 +28,9 @@
         <td><%= livrarium.Páginas %></td>
         <td><%= livrarium.Editora %></td>
         <td><%= livrarium.Avaliação %></td>
-        <td><%= link_to 'Show', livrarium %></td>
-        <td><%= link_to 'Edit', edit_livrarium_path(livrarium) %></td>
-        <td><%= link_to 'Destroy', livrarium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', livrarium %></td>
+        <td><%= link_to 'Editar', edit_livrarium_path(livrarium) %></td>
+        <td><%= link_to 'Deletar', livrarium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -38,9 +39,10 @@
 </center>
 
 <br>
+</fonte>
 <center>
-<%= link_to 'New Livrarium', new_livrarium_path %>
+<%= link_to 'Adicionar novo livro', new_livrarium_path %>
 </center>
-<p>
-<img src="C:\Users\User\CRUD\imageslivro.jpg"/>
-</p>
+
+
+
