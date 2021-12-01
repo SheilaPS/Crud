@@ -26,7 +26,7 @@ class LivrariaController < ApplicationController
 
     respond_to do |format|
       if @livrarium.save
-        format.html { redirect_to @livrarium, notice: "Livrarium was successfully created." }
+        format.html { redirect_to @livrarium, notice: "Livro incluido com Sucesso." }
         format.json { render :show, status: :created, location: @livrarium }
       else
         format.html { render :new, status: :unprocessable_entity }
